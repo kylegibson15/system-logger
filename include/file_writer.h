@@ -1,0 +1,11 @@
+#ifndef __FILE_WRITER_API
+#define __FILE_WRITER_API
+
+#include <stdio.h>
+
+FILE *open_log_file(char *file_path);
+
+void write_log_to_file(FILE *file, unsigned long long free_memory);
+
+void close_log_file(FILE *file);
+#endif
